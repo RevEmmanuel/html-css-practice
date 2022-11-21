@@ -124,6 +124,11 @@ header {
   position: relative;
   right: 630px;
 }
+
+.neptune:hover,
+.planet:hover {
+  animation: rotate 4s ease-in-out infinite forwards;
+}
 .middle {
   display: flex;
   flex-direction: row;
@@ -281,6 +286,11 @@ header {
   text-align: center;
 }
 
+/* .floating_image {
+  animation: rotate 4s ease-in-out infinite forwards;
+  animation: rotation 4s linear infinite forwards;
+} */
+
 .bottom_icons > div:hover .low_icon {
   animation: rotate 4s ease-in-out infinite forwards;
 }
@@ -298,6 +308,18 @@ header {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
